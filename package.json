@@ -8,14 +8,17 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "//pretest": "npm run lint",
+    "test": "mocha",
+    "start": "npm run test -- -w"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/katlyn75/tcp-logger.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Katlyn",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/katlyn75/tcp-logger/issues"
   },
